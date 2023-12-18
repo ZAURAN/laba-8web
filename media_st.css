@@ -1,0 +1,36 @@
+@media (min-width: 1200px) {
+    .container {
+      width: 80%;
+    }
+    
+    .cakes {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Планшети */  
+  @media (min-width: 730px) and (max-width: 1200px) {
+    .container {
+      width: 90%; 
+    }
+    
+    .cakes {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Мобільні */
+  @media (max-width: 730px) {
+    .container {
+      width: 100%;
+      flex-direction: column;
+    }
+    
+    .cakes {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .nav {
+      justify-content: center;
+    }
+  }
